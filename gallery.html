@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Media & Productions Gallery | Culture &amp; Media Committee — ASU Medicine SU</title>
+  <meta name="description" content="Official portal of the Culture and Media Committee, Ain Shams University Faculty of Medicine Student Union (Gilgamesh Book Club, Creative Zine, Theater & Media Gallery)." />
+  <!-- Google Fonts: Inter, Playfair Display (English), Amiri & Cairo (Arabic RTL Support) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Amiri:ital,wght@0,400;0,700;1,400&family=Cairo:wght@500;600;700&family=Inter:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,600;0,700;1,600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+
+  <!-- ================= GLOBAL STICKY HEADER / NAVIGATION ================= -->
+  <header class="site-header">
+    <div class="container nav-wrapper">
+      <a href="index.html" class="brand-identity" aria-label="Culture and Media Committee Home">
+        <img src="assets/gilgamesh-logo.jpg" alt="Gilgamesh MED.ASU.READS Emblem" class="brand-logo" />
+        <div class="brand-titles">
+          <span class="brand-title-main">Culture &amp; Media Committee</span>
+          <span class="brand-title-sub">Ain Shams Medicine Student Union &bull; @gilgamesh.asu</span>
+        </div>
+      </a>
+
+      <button id="mobile-menu-toggle" class="mobile-menu-btn" aria-label="Toggle Menu" aria-expanded="false">&#9776;</button>
+
+      <nav aria-label="Primary Navigation">
+        <ul id="primary-nav-links" class="nav-links">
+          <li><a href="index.html" class="nav-link">Home</a></li>
+          <li><a href="join-book-club.html" class="nav-link nav-cta-join">Join Book Club</a></li>
+          <li><a href="book-club.html" class="nav-link">Gilgamesh Book Club</a></li>
+          <li><a href="zine.html" class="nav-link">Creative Zine</a></li>
+          <li><a href="gallery.html" class="nav-link active">Media Gallery</a></li>
+          <li><a href="submit.html" class="nav-link">Submit Work</a></li>
+          <li><a href="verify.html" class="nav-link nav-cta-verify">Verify Certificate</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- ================= MAIN PAGE CONTENT ================= -->
+  <main>
+
+    <section class="hero-section" style="padding:3.25rem 0;">
+      <div class="container">
+        <span class="eyebrow-badge">&#127916; Stage Plays, Event Branding &amp; Visual Coverage</span>
+        <h1 class="hero-title">Media &amp; <span>Productions Gallery</span></h1>
+        <p class="hero-subtitle" style="margin-bottom:0;">
+          Explore photography and visual design from our theatrical productions (<em>Al-Live Al-Akheer</em> &amp; <em>Wahed Shay</em>), Gilgamesh Book Club booths, and campus cultural festivals. Click any photo to expand in full-screen lightbox view.
+        </p>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <div class="filter-bar" role="tablist" aria-label="Filter Media Gallery">
+          <button class="filter-pill active" data-gallery-filter="all">All Media (6)</button>
+          <button class="filter-pill" data-gallery-filter="Theater">Stage Productions</button>
+          <button class="filter-pill" data-gallery-filter="Branding">Posters &amp; Branding</button>
+          <button class="filter-pill" data-gallery-filter="Events">Campus Coverage</button>
+        </div>
+
+        <!-- [ADMIN NOTE: Copy any .gallery-item card below to add new photos or poster designs] -->
+        <div class="grid-3">
+          <article class="card gallery-item" data-category="Theater">
+            <div class="card-img-wrap">
+              <img src="assets/theater-production.jpg" alt="Al-Live Al-Akheer Theatrical Production" />
+              <span class="card-tag">Theater &bull; Al-Live Al-Akheer</span>
+            </div>
+            <div class="card-body">
+              <h3 class="card-title">Stage Production: &ldquo;Al-Live Al-Akheer&rdquo; (اللايف الأخير)</h3>
+              <p class="card-text">Act III climax under amber and lapis spotlights at the Faculty of Medicine Main Amphitheater.</p>
+              <button type="button" class="btn btn-outline-dark gallery-zoom-trigger" data-img-src="assets/theater-production.jpg" data-caption="Al-Live Al-Akheer (اللايف الأخير) — Main Stage Production, ASU Medicine Student Union">&#128269; Expand Fullscreen</button>
+            </div>
+          </article>
+
+          <article class="card gallery-item" data-category="Branding">
+            <div class="card-img-wrap">
+              <img src="assets/gilgamesh-logo.jpg" alt="Gilgamesh Book Club Official Brand Identity" />
+              <span class="card-tag">Branding &bull; Emblem</span>
+            </div>
+            <div class="card-body">
+              <h3 class="card-title">Gilgamesh (@gilgamesh.asu) Official Emblem</h3>
+              <p class="card-text">Our signature emblem fusing ancient Mesopotamian heritage with modern medical student culture.</p>
+              <button type="button" class="btn btn-outline-dark gallery-zoom-trigger" data-img-src="assets/gilgamesh-logo.jpg" data-caption="Official Gilgamesh (@gilgamesh.asu) Emblem — Culture and Media Committee">&#128269; Expand Fullscreen</button>
+            </div>
+          </article>
+
+          <article class="card gallery-item" data-category="Theater">
+            <div class="card-img-wrap">
+              <img src="assets/hero-cultural-hub.jpg" alt="Wahed Shay Theatrical Poster & Stage Concept" />
+              <span class="card-tag">Theater &bull; Wahed Shay</span>
+            </div>
+            <div class="card-body">
+              <h3 class="card-title">Theatrical Production: &ldquo;Wahed Shay&rdquo; (واحد شاي)</h3>
+              <p class="card-text">Set design and architectural lighting concept for our ensemble comedy-drama production.</p>
+              <button type="button" class="btn btn-outline-dark gallery-zoom-trigger" data-img-src="assets/hero-cultural-hub.jpg" data-caption="Wahed Shay (واحد شاي) — Stage & Set Direction Concept, Culture & Media Committee">&#128269; Expand Fullscreen</button>
+            </div>
+          </article>
+
+          <article class="card gallery-item" data-category="Branding">
+            <div class="card-img-wrap">
+              <img src="assets/gilgamesh-epic.jpg" alt="Gilgamesh Recruitment Booth Poster Visual" />
+              <span class="card-tag">Poster Design</span>
+            </div>
+            <div class="card-body">
+              <h3 class="card-title">Gilgamesh Annual Recruitment Booth Key Visual</h3>
+              <p class="card-text">Illustrated key visual created for our campus recruitment drive and bookmark collection.</p>
+              <button type="button" class="btn btn-outline-dark gallery-zoom-trigger" data-img-src="assets/gilgamesh-epic.jpg" data-caption="Gilgamesh Book Club Annual Recruitment Key Visual Poster">&#128269; Expand Fullscreen</button>
+            </div>
+          </article>
+
+          <article class="card gallery-item" data-category="Events">
+            <div class="card-img-wrap">
+              <img src="assets/zine-flatlay.jpg" alt="Creative Zine Editorial Workshop" />
+              <span class="card-tag">Events &bull; Workshop</span>
+            </div>
+            <div class="card-body">
+              <h3 class="card-title">Arabic Calligraphy &amp; Zine Printmaking Workshop</h3>
+              <p class="card-text">Behind-the-scenes flat-lay from our hands-on student zine layout and calligraphy afternoon.</p>
+              <button type="button" class="btn btn-outline-dark gallery-zoom-trigger" data-img-src="assets/zine-flatlay.jpg" data-caption="Arabic Calligraphy & Creative Zine Workshop — ASU Faculty of Medicine">&#128269; Expand Fullscreen</button>
+            </div>
+          </article>
+
+          <article class="card gallery-item" data-category="Events">
+            <div class="card-img-wrap">
+              <img src="assets/campus-culture.jpg" alt="Outdoor Cultural Courtyard Festival" />
+              <span class="card-tag">Events &bull; Festival</span>
+            </div>
+            <div class="card-body">
+              <h3 class="card-title">Spring Cultural Courtyard &amp; Open Mic Day</h3>
+              <p class="card-text">Live acoustic performances, poetry readings, and literature booths in the Faculty of Medicine courtyard.</p>
+              <button type="button" class="btn btn-outline-dark gallery-zoom-trigger" data-img-src="assets/campus-culture.jpg" data-caption="Spring Cultural Courtyard Festival — Culture & Media Committee">&#128269; Expand Fullscreen</button>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- FULLSCREEN LIGHTBOX MODAL -->
+    <div id="gallery-lightbox" class="modal-backdrop" role="dialog" aria-modal="true" aria-label="Image Lightbox">
+      <div class="modal-content" style="background:var(--bg-espresso); color:#FFFFFF; max-width:920px; text-align:center;">
+        <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:1rem;">
+          <span style="color:var(--accent-gold); font-weight:600; font-size:0.9rem;">Culture &amp; Media Portfolio Lightbox</span>
+          <button id="lightbox-close" class="btn btn-secondary" style="padding:0.35rem 0.9rem; font-size:0.85rem;">&times; Close Fullscreen</button>
+        </div>
+        <img id="lightbox-img" src="assets/theater-production.jpg" alt="Expanded Gallery View" style="max-height:70vh; width:auto; margin:0 auto; border-radius:var(--radius-sm); border:1px solid rgba(216,152,48,0.4);" />
+        <p id="lightbox-caption" style="margin-top:1rem; color:#E5D6C8; font-size:0.98rem;"></p>
+      </div>
+    </div>
+
+  </main>
+
+  <!-- ================= GLOBAL FOOTER ================= -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div>
+          <div class="brand-identity" style="margin-bottom:1rem;">
+            <img src="assets/gilgamesh-logo.jpg" alt="Gilgamesh Logo" class="brand-logo" />
+            <div class="brand-titles">
+              <span class="brand-title-main">Culture &amp; Media Committee</span>
+              <span class="brand-title-sub">Faculty of Medicine &bull; Ain Shams University</span>
+            </div>
+          </div>
+          <p style="font-size:0.92rem; color:#C9B6A6; max-width:380px;">
+            Amplifying medical students' literary voices, theatrical productions, bilingual book discussions, and visual storytelling across campus.
+          </p>
+        </div>
+
+        <div>
+          <h4 class="serif-heading" style="color:var(--accent-gold); font-size:1.05rem; margin-bottom:0.85rem;">Quick Navigation</h4>
+          <ul style="list-style:none; display:grid; gap:0.45rem; font-size:0.9rem;">
+            <li><a href="join-book-club.html" style="color:var(--accent-gold-bright); font-weight:600;">&#10022; Join Gilgamesh Book Club</a></li>
+            <li><a href="submit.html" style="color:#EFE5DC; font-weight:600;">&#9998; Submit Your Work</a></li>
+            <li><a href="book-club.html">Gilgamesh Book Club (@gilgamesh.asu)</a></li>
+            <li><a href="zine.html">Student Creative Zine (EN / AR)</a></li>
+            <li><a href="gallery.html">Theater &amp; Media Productions</a></li>
+            <li><a href="verify.html">Verify Volunteer Certificate</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <!-- [ADMIN NOTE: Replace placeholder social URLs and contact email below] -->
+          <h4 class="serif-heading" style="color:var(--accent-gold); font-size:1.05rem; margin-bottom:0.85rem;">Connect With Us</h4>
+          <ul style="list-style:none; display:grid; gap:0.5rem; font-size:0.9rem;">
+            <li><a href="https://www.instagram.com/gilgamesh.asu" target="_blank" rel="noopener" style="color:var(--accent-gold-bright); font-weight:600;">Instagram &mdash; @gilgamesh.asu</a></li>
+            <li><a href="https://facebook.com" target="_blank" rel="noopener">Facebook &mdash; ASU Medicine Student Union</a></li>
+            <li><a href="https://youtube.com" target="_blank" rel="noopener">YouTube &mdash; Culture &amp; Media Stage Archive</a></li>
+            <li><a href="mailto:culture.media@med.asu.edu.eg" style="color:#63D8FF;">culture.media@med.asu.edu.eg</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <span>&copy; 2026 Ain Shams University Faculty of Medicine Student Union. All rights reserved.</span>
+        <span style="color:var(--accent-gold); font-weight:600;">Made by the Culture and Media Committee &bull; Developed by Dr. Ahmed Elkateb</span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>

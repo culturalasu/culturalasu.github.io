@@ -1,0 +1,37 @@
+[
+  {
+    "cert_id": "SU-CCM-1001",
+    "name": "Sample Student",
+    "role": "Media Committee Volunteer",
+    "issue_date": "2025-11-20",
+    "status": "Valid"
+  },
+  {
+    "cert_id": "SU-CCM-1002",
+    "name": "Jane Doe",
+    "role": "Event Photographer",
+    "issue_date": "2026-03-10",
+    "status": "Valid"
+  },
+  {
+    "cert_id": "SU-CCM-1003",
+    "name": "Omar Khaled El-Sayed",
+    "role": "Gilgamesh Book Club Moderator",
+    "issue_date": "2026-04-15",
+    "status": "Valid"
+  },
+  {
+    "cert_id": "SU-CCM-1004",
+    "name": "Nourhan Tarek Abdelrahman",
+    "role": "Theatrical Production Stage Director (Al-Live Al-Akheer)",
+    "issue_date": "2026-05-02",
+    "status": "Valid"
+  },
+  {
+    "cert_id": "SU-CCM-1005",
+    "name": "Youssef Mahmoud Hassan",
+    "role": "Creative Zine Editorial Reviewer",
+    "issue_date": "2026-06-18",
+    "status": "Valid"
+  }
+]

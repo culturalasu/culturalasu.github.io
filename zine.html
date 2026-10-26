@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Creative Zine | Culture &amp; Media Committee — ASU Medicine SU</title>
+  <meta name="description" content="Official portal of the Culture and Media Committee, Ain Shams University Faculty of Medicine Student Union (Gilgamesh Book Club, Creative Zine, Theater & Media Gallery)." />
+  <!-- Google Fonts: Inter, Playfair Display (English), Amiri & Cairo (Arabic RTL Support) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Amiri:ital,wght@0,400;0,700;1,400&family=Cairo:wght@500;600;700&family=Inter:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,600;0,700;1,600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+
+  <!-- ================= GLOBAL STICKY HEADER / NAVIGATION ================= -->
+  <header class="site-header">
+    <div class="container nav-wrapper">
+      <a href="index.html" class="brand-identity" aria-label="Culture and Media Committee Home">
+        <img src="assets/gilgamesh-logo.jpg" alt="Gilgamesh MED.ASU.READS Emblem" class="brand-logo" />
+        <div class="brand-titles">
+          <span class="brand-title-main">Culture &amp; Media Committee</span>
+          <span class="brand-title-sub">Ain Shams Medicine Student Union &bull; @gilgamesh.asu</span>
+        </div>
+      </a>
+
+      <button id="mobile-menu-toggle" class="mobile-menu-btn" aria-label="Toggle Menu" aria-expanded="false">&#9776;</button>
+
+      <nav aria-label="Primary Navigation">
+        <ul id="primary-nav-links" class="nav-links">
+          <li><a href="index.html" class="nav-link">Home</a></li>
+          <li><a href="join-book-club.html" class="nav-link nav-cta-join">Join Book Club</a></li>
+          <li><a href="book-club.html" class="nav-link">Gilgamesh Book Club</a></li>
+          <li><a href="zine.html" class="nav-link active">Creative Zine</a></li>
+          <li><a href="gallery.html" class="nav-link">Media Gallery</a></li>
+          <li><a href="submit.html" class="nav-link">Submit Work</a></li>
+          <li><a href="verify.html" class="nav-link nav-cta-verify">Verify Certificate</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- ================= MAIN PAGE CONTENT ================= -->
+  <main>
+
+    <section class="hero-section" style="padding:3.25rem 0;">
+      <div class="container">
+        <span class="eyebrow-badge">&#9998; Student Literary &amp; Creative Journal (LTR &amp; RTL)</span>
+        <h1 class="hero-title">Creative <span>Zine &amp; Articles</span></h1>
+        <p class="hero-subtitle" style="margin-bottom:0;">
+          Original poetry, essays, short stories, and visual works by Ain Shams medical students in both English and Arabic. Click any piece to read the full work on-page.
+        </p>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <!-- Category Filter Bar -->
+        <div class="filter-bar" role="tablist" aria-label="Filter Zine Submissions by Category">
+          <button class="filter-pill active" data-zine-filter="all">All Works (6)</button>
+          <button class="filter-pill" data-zine-filter="Poetry">Poetry</button>
+          <button class="filter-pill" data-zine-filter="Essay">Essay</button>
+          <button class="filter-pill" data-zine-filter="Short Story">Short Story</button>
+          <button class="filter-pill" data-zine-filter="Visual Works">Visual Works</button>
+        </div>
+
+        <!-- =====================================================================
+             ADMIN WORKFLOW GUIDE FOR ADDING NEW ZINE SUBMISSIONS:
+             1. Copy one <article class="card zine-item" ...> block below.
+             2. For Arabic submissions, set dir="rtl" on the <article> tag.
+                For English submissions, set dir="ltr" on the <article> tag.
+             3. Set data-category="Poetry" (or "Essay", "Short Story", "Visual Works").
+             4. Put the short preview in <p class="card-text"> and the complete
+                piece inside <div class="zine-full-content" style="display:none;">.
+             ===================================================================== -->
+        <div class="grid-3">
+
+          <!-- ZINE ITEM 1: Arabic Poetry (RTL) -->
+          <article class="card zine-item" data-category="Poetry" dir="rtl">
+            <div class="card-img-wrap">
+              <img src="assets/zine-flatlay.jpg" alt="Arabic Poem: قنديل في ممر المستشفى" />
+              <span class="card-tag">Poetry &bull; شعر</span>
+            </div>
+            <div class="card-body">
+              <h3 class="card-title">قنديلٌ في ممرّ المستشفى القديم</h3>
+              <p class="zine-author" style="font-size:0.85rem; color:var(--bg-terracotta); font-weight:600; margin-bottom:0.65rem;">
+                سلمى المصري &bull; الفرقة الرابعة &mdash; طب عين شمس
+              </p>
+              <p class="card-text">
+                بينَ خُطى الساهرينَ ووقعِ السماعاتِ على الصدورِ المتعبة، يولدُ بيتُ قصيدةٍ لا يعرفُهُ إلا مَن أرهقهُ السهرُ...
+              </p>
+              <div class="zine-full-content" style="display:none;">
+                <p style="margin-bottom:1rem;">بينَ خُطى الساهرينَ ووقعِ السماعاتِ على الصدورِ المتعبة،<br>يولدُ بيتُ قصيدةٍ لا يعرفُهُ إلا مَن أرهقهُ السهرُ في نبطشيات الشتاء.</p>
+                <p style="margin-bottom:1rem;">نقرأُ في وجوهِ العابرينَ حكاياتِ مدينةٍ كاملة،<br>ونداوي الجراحَ بكلمةٍ طيّبةٍ قبلَ الدواء،<br>كأنّ الطبَّ والشعرَ توأمانِ خرجا من رحمِ الدهشةِ ذاتها.</p>
+                <p>في آخرِ الممرّ، يضيءُ قنديلٌ أصفرُ بلونِ الذهبِ القديم،<br>يذكّرنا بأنّ الفجرَ قادمٌ مهما طالَ الليلُ على الأجنحة.</p>
+              </div>
+              <div class="card-footer" dir="ltr">
+                <span>Arabic (RTL) &bull; Poetry</span>
+                <button type="button" class="btn btn-outline-dark open-zine-reader" style="padding:0.4rem 0.85rem; font-size:0.82rem;">Read Full Piece &rarr;</button>
+              </div>
+            </div>
+          </article>
+
+          <!-- ZINE ITEM 2: English Essay (LTR) -->
+          <article class="card zine-item" data-category="Essay" dir="ltr">
+            <div class="card-img-wrap">
+              <img src="assets/campus-culture.jpg" alt="Essay: Anatomy of Empathy" />
+              <span class="card-tag">Essay</span>
+            </div>
+            <div class="card-body">
+              <h3 class="card-title">The Anatomy of Empathy: Why Physicians Need Literature</h3>
+              <p class="zine-author" style="font-size:0.85rem; color:var(--bg-terracotta); font-weight:600; margin-bottom:0.65rem;">
+                By Karim Abdel-Aziz &bull; 5th Year Medical Student
+              </p>
+              <p class="card-text">
+                Textbooks teach us the pathophysiology of grief and pain, but only novels and theatre teach us what those symptoms feel like inside a patient&rsquo;s home...
+              </p>
+              <div class="zine-full-content" style="display:none;">
+                <p style="margin-bottom:1rem;">Textbooks teach us the pathophysiology of grief and pain, but only novels and theatre teach us what those symptoms feel like inside a patient&rsquo;s home. When we gather at the Gilgamesh Book Club after lectures, we aren&rsquo;t escaping medicine—we are sharpening our most vital diagnostic instrument: human listening.</p>
+                <p style="margin-bottom:1rem;">Whether reading Mikhail Bulgakov&rsquo;s rural clinic diaries or Naguib Mahfouz&rsquo;s alleys of Cairo, every patient encounter is fundamentally a story waiting to be heard with patience and dignity.</p>
+                <p>Literature reminds us that behind every lab chart and bed number lies an entire universe of memory, fear, and hope.</p>
+              </div>
+              <div class="card-footer">
+                <span>English (LTR) &bull; Essay</span>
+                <button type="button" class="btn btn-outline-dark open-zine-reader" style="padding:0.4rem 0.85rem; font-size:0.82rem;">Read Full Piece &rarr;</button>
+              </div>
+            </div>
+          </article>
+
+          <!-- ZINE ITEM 3: Arabic Short Story (RTL) -->
+          <article class="card zine-item" data-category="Short Story" dir="rtl">
+            <div class="card-img-wrap">
+              <img src="assets/theater-production.jpg" alt="Short Story: تذكرة الصف الأول" />
+              <span class="card-tag">Short Story &bull; قصة قصيرة</span>
+            </div>
+            <div class="card-body">
+              <h3 class="card-title">تذكرةُ الصفِّ الأوّل في مسرح الكلية</h3>
+              <p class="zine-author" style="font-size:0.85rem; color:var(--bg-terracotta); font-weight:600; margin-bottom:0.65rem;">
+                زياد علي عبد الحميد &bull; الفرقة الثالثة
+              </p>
+              <p class="card-text">
+                قبل أن تُفتح الستارة المخملية بدقائق، كان المقعد رقم سبعة في مدرج المحلاوي ينتظر صاحبه القديم الذي ترك معطفه الأبيض على الكرسي...
+              </p>
+              <div class="zine-full-content" style="display:none;">
+                <p style="margin-bottom:1rem;">قبل أن تُفتح الستارة المخملية بدقائق، كان المقعد رقم سبعة في مدرج المحلاوي ينتظر صاحبه القديم الذي ترك معطفه الأبيض على الكرسي وهرع إلى كواليس المسرح ليراجع حواره الأخير في عرض &laquo;اللايف الأخير&raquo;.</p>
+                <p style="margin-bottom:1rem;">ارتجفت الأضواء الكهرمانية والزرقاء فوق الخشبة، واختلطت رائحة القهوة وورق النصوص بدقات قلوب الممثلين الشباب الذين تحوّلوا من طلاب طب منهكين إلى أبطال يصنعون الدهشة.</p>
+                <p>وحين دوّى التصفيق في نهاية العرض، أدرك الجميع أن المسرح لم يكن مجرّد عرضٍ عابر، بل ذاكرةٌ حيّةٌ ستبقى في جدران الكلية لسنوات.</p>
+              </div>
+              <div class="card-footer" dir="ltr">
+                <span>Arabic (RTL) &bull; Short Story</span>
+                <button type="button" class="btn btn-outline-dark open-zine-reader" style="padding:0.4rem 0.85rem; font-size:0.82rem;">Read Full Piece &rarr;</button>
+              </div>
+            </div>
+          </article>
+
+          <!-- ZINE ITEM 4: Visual Works Showcase (LTR) -->
+          <article class="card zine-item" data-category="Visual Works" dir="ltr">
+            <div class="card-img-wrap">
+              <img src="assets/gilgamesh-epic.jpg" alt="Visual Series: Tablets of Uruk & Cairo" />
+              <span class="card-tag">Visual Works</span>
+            </div>
+            <div class="card-body">
+              <h3 class="card-title">Tablets of Uruk &amp; Arches of Cairo (Visual Series)</h3>
+              <p class="zine-author" style="font-size:0.85rem; color:var(--bg-terracotta); font-weight:600; margin-bottom:0.65rem;">
+                By Mariam Hany &bull; 2nd Year Medical Student
+              </p>
+              <p class="card-text">
+                A digital illustration series blending Mesopotamian cuneiform motifs, circuit-board lines from the Gilgamesh emblem, and historic Cairo architecture.
+              </p>
+              <div class="zine-full-content" style="display:none;">
+                <p style="margin-bottom:1rem;">This visual design series was created for the Gilgamesh Book Club annual booth at Ain Shams Faculty of Medicine. Using our signature deep mahogany, ochre gold, and turquoise circuit palette, it bridges ancient storytelling with modern medical science.</p>
+                <p>Medium: Vector &amp; Digital Illustration (300 DPI print exhibition series).</p>
+              </div>
+              <div class="card-footer">
+                <span>Visual Works &bull; Design</span>
+                <button type="button" class="btn btn-outline-dark open-zine-reader" style="padding:0.4rem 0.85rem; font-size:0.82rem;">Read Creator Note &rarr;</button>
+              </div>
+            </div>
+          </article>
+
+          <!-- ZINE ITEM 5: English Short Story (LTR) -->
+          <article class="card zine-item" data-category="Short Story" dir="ltr">
+            <div class="card-img-wrap">
+              <img src="assets/hero-cultural-hub.jpg" alt="Short Story: Wahed Shay at Dawn" />
+              <span class="card-tag">Short Story</span>
+            </div>
+            <div class="card-body">
+              <h3 class="card-title">Wahed Shay Before the Anatomy Exam</h3>
+              <p class="zine-author" style="font-size:0.85rem; color:var(--bg-terracotta); font-weight:600; margin-bottom:0.65rem;">
+                By Nadine Alaa Eldin &bull; 3rd Year Medical Student
+              </p>
+              <p class="card-text">
+                At 6:15 AM outside El-Demerdash gate, two mint teas and a dog-eared copy of Agatha Christie sparked the script for our semester play...
+              </p>
+              <div class="zine-full-content" style="display:none;">
+                <p style="margin-bottom:1rem;">At 6:15 AM outside El-Demerdash gate, two glasses of mint tea and a dog-eared copy of Agatha Christie sparked the script for what would later become our stage production <em>Wahed Shay</em>.</p>
+                <p>Between quizzing each other on cranial nerves and sketching stage blocking on the back of lecture handouts, we discovered that friendship is the true anchor of medical school.</p>
+              </div>
+              <div class="card-footer">
+                <span>English (LTR) &bull; Short Story</span>
+                <button type="button" class="btn btn-outline-dark open-zine-reader" style="padding:0.4rem 0.85rem; font-size:0.82rem;">Read Full Piece &rarr;</button>
+              </div>
+            </div>
+          </article>
+
+          <!-- ZINE ITEM 6: Arabic Essay (RTL) -->
+          <article class="card zine-item" data-category="Essay" dir="rtl">
+            <div class="card-img-wrap">
+              <img src="assets/campus-culture.jpg" alt="Arabic Essay: لماذا نقرأ جلجامش اليوم؟" />
+              <span class="card-tag">Essay &bull; مقال</span>
+            </div>
+            <div class="card-body">
+              <h3 class="card-title">لماذا نقرأُ ملحمةَ جلجامش في كلّية الطب؟</h3>
+              <p class="zine-author" style="font-size:0.85rem; color:var(--bg-terracotta); font-weight:600; margin-bottom:0.65rem;">
+                أحمد صلاح إدريس &bull; الفرقة الرابعة
+              </p>
+              <p class="card-text">
+                منذ آلاف السنين خرج جلجامش يبحث عن عشبة الخلود بعد فقدان صديقه أنكيدو، وهي الرحلة ذاتها التي يخوضها الطبيب كل يوم في مواجهة الألم...
+              </p>
+              <div class="zine-full-content" style="display:none;">
+                <p style="margin-bottom:1rem;">منذ آلاف السنين خرج جلجامش يبحث عن عشبة الخلود بعد فقدان صديقه أنكيدو، وهي الرحلة الرمزية ذاتها التي يخوضها طالب الطب والطبيب كل يوم في مواجهة المرض والألم الإنساني.</p>
+                <p>إن اختيار &laquo;جلجامش&raquo; شعاراً لنادي القراءة في طب عين شمس يربط بين أقدم نصٍّ أدبيٍّ في تاريخ الحضارة وبين رسالتنا اليومية في حفظ الحياة وصناعة الأمل والوعي الثقافي.</p>
+              </div>
+              <div class="card-footer" dir="ltr">
+                <span>Arabic (RTL) &bull; Essay</span>
+                <button type="button" class="btn btn-outline-dark open-zine-reader" style="padding:0.4rem 0.85rem; font-size:0.82rem;">Read Full Piece &rarr;</button>
+              </div>
+            </div>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ON-PAGE ZINE READER MODAL -->
+    <div id="zine-reader-modal" class="modal-backdrop" role="dialog" aria-modal="true" aria-label="Article Reader">
+      <div class="modal-content">
+        <div style="display:flex; justify-content:flex-end; margin-bottom:0.5rem;">
+          <button id="zine-modal-close" class="btn btn-outline-dark" style="padding:0.35rem 0.8rem; font-size:0.85rem;">&times; Close Reader</button>
+        </div>
+        <div id="zine-modal-body"></div>
+      </div>
+    </div>
+
+  </main>
+
+  <!-- ================= GLOBAL FOOTER ================= -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div>
+          <div class="brand-identity" style="margin-bottom:1rem;">
+            <img src="assets/gilgamesh-logo.jpg" alt="Gilgamesh Logo" class="brand-logo" />
+            <div class="brand-titles">
+              <span class="brand-title-main">Culture &amp; Media Committee</span>
+              <span class="brand-title-sub">Faculty of Medicine &bull; Ain Shams University</span>
+            </div>
+          </div>
+          <p style="font-size:0.92rem; color:#C9B6A6; max-width:380px;">
+            Amplifying medical students' literary voices, theatrical productions, bilingual book discussions, and visual storytelling across campus.
+          </p>
+        </div>
+
+        <div>
+          <h4 class="serif-heading" style="color:var(--accent-gold); font-size:1.05rem; margin-bottom:0.85rem;">Quick Navigation</h4>
+          <ul style="list-style:none; display:grid; gap:0.45rem; font-size:0.9rem;">
+            <li><a href="join-book-club.html" style="color:var(--accent-gold-bright); font-weight:600;">&#10022; Join Gilgamesh Book Club</a></li>
+            <li><a href="submit.html" style="color:#EFE5DC; font-weight:600;">&#9998; Submit Your Work</a></li>
+            <li><a href="book-club.html">Gilgamesh Book Club (@gilgamesh.asu)</a></li>
+            <li><a href="zine.html">Student Creative Zine (EN / AR)</a></li>
+            <li><a href="gallery.html">Theater &amp; Media Productions</a></li>
+            <li><a href="verify.html">Verify Volunteer Certificate</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <!-- [ADMIN NOTE: Replace placeholder social URLs and contact email below] -->
+          <h4 class="serif-heading" style="color:var(--accent-gold); font-size:1.05rem; margin-bottom:0.85rem;">Connect With Us</h4>
+          <ul style="list-style:none; display:grid; gap:0.5rem; font-size:0.9rem;">
+            <li><a href="https://www.instagram.com/gilgamesh.asu" target="_blank" rel="noopener" style="color:var(--accent-gold-bright); font-weight:600;">Instagram &mdash; @gilgamesh.asu</a></li>
+            <li><a href="https://facebook.com" target="_blank" rel="noopener">Facebook &mdash; ASU Medicine Student Union</a></li>
+            <li><a href="https://youtube.com" target="_blank" rel="noopener">YouTube &mdash; Culture &amp; Media Stage Archive</a></li>
+            <li><a href="mailto:culture.media@med.asu.edu.eg" style="color:#63D8FF;">culture.media@med.asu.edu.eg</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <span>&copy; 2026 Ain Shams University Faculty of Medicine Student Union. All rights reserved.</span>
+        <span style="color:var(--accent-gold); font-weight:600;">Made by the Culture and Media Committee &bull; Developed by Dr. Ahmed Elkateb</span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
